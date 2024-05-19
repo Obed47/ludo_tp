@@ -1,0 +1,134 @@
+.main
+{ 
+    margin: auto;
+    width: 60%;
+    cursor: pointer;
+    height: 550px;
+    border: 2px solid black;
+}
+.main .first{
+    display: flex;
+    width: 100%;
+    height: 37%;
+    border: 2px solid orange;
+}
+.main .second{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    border: 2px solid orange;
+}
+.main .third{
+    display: flex;
+    width: 100%;
+    height: 37%;
+    border: 2px solid orange;
+}
+ .first1{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: (50px 50px);
+    gap: 0;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+    height: 100%;
+    border: 3px solid blue;
+}
+ .first2{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: (50px 50px);
+    gap: 0;
+    margin: auto;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+}
+ .first3{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: (50px 50px);
+    gap: 0;
+    margin: auto;
+    padding: 0;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 3px solid blue;
+}
+.first2 > *{
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    border: 2px solid black;
+}
+.first1 > *{
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    border: 2px solid black;
+}
+.first3 > *{
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    border: 2px solid black;
+}
+p{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.circle{
+    margin: auto;
+    margin-left: 70px;
+    text-align: center;
+    width: 170px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: blueviolet;
+}
+a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size:80;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+.token{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: red;
+    border: 2px solid black;
+    margin: auto;
+}
+.die{
+    width: 100px;
+    height: 20px;
+    border: 2px solid orange;
+}
+@keyframes animate{
+25%{
+    opacity: 0.25;
+}
+50%{
+    opacity: 0.5;
+}
+75%{
+    opacity: 0.75;
+}
+100%{
+    opacity: 1;
+}
+}
