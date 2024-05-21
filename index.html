@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ludo Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="all">
     <div class="main">
         <div class="first">
             <div class="first1">
@@ -27,29 +27,29 @@
                 <p id="13"></p>
                 <p id="14"></p>
                 <p id="11"></p>
-                <p style="background-color: red;"></p>
+                <p id="70" style="background-color: red;"></p>
                 <p id="15" style="background-color: red;">
                     <a  class="fa fa-arrow-down"  href="#"></a>
                 </p>
                 <p id="10"></p>
-                <p style="background-color: red;"></p>
+                <p  id="71" style="background-color: red;"></p>
                 <p id="16"></p>
                 <p id="9"></p>
-                <p style="background-color: red;"></p>
+                <p id="72" style="background-color: red;"></p>
                 <p id="17"></p>
                 <p id="8" ></p>
-                <p style="background-color: red;"></p>
+                <p id="73" style="background-color: red;"></p>
                 <p id="18"></p>
                 <p id="7"></p>
-                <p style="background-color: red;"></p>
+                <p id="74" style="background-color: red;"></p>
                 <p  id="19"></p>
             </div>
             <div class="first3">
                 <div id="circle1" style="background-color: red;" class="circle">
-                    <div class="token"></div>
-                    <div class="token"></div>
-                    <div class="token"></div>
-                    <div class="token"></div>
+                    <div id="t1" class="token"></div>
+                    <div id="t2"  class="token"></div>
+                    <div id="t3"  class="token"></div>
+                    <div id="t4"  class="token"></div>
                 </div>
             </div>
         </div>
@@ -57,26 +57,31 @@
             <div class="first1">
                <p id="54"></p>
                <p id="1" style="background-color: blue;">
-            <a  class="fa fa-arrow-right"  href="#"></a></p>
+                    <a  class="fa fa-arrow-right"  href="#"></a>
+                </p>
                <p id="2"></p>
                <p id="4"></p>
                <p id="5"></p>
                <p id="6"></p>
                <p id="53"></p>
-               <p  style="background-color: blue;"></p>
-               <p  style="background-color: blue;"></p>
-               <p  style="background-color: blue;"></p>
-               <p  style="background-color: blue;"></p>
-               <p  style="background-color: blue;"></p>
-               <p id="52"></p>
-               <p id="51"></p>
+               <p id="55"  style="background-color: blue;"></p>
+               <p id="56"  style="background-color: blue;"></p>
+               <p id="57"  style="background-color: blue;"></p>
+               <p id="58"  style="background-color: blue;"></p>
+               <p id="59"  style="background-color: blue;"></p>
+               <p  id="52"></p>
+               <p  id="51"></p>
                <p id="50"></p>
                <!-- kittle -->
                <p id="49"></p>
                <p id="48"></p>
                <p id="47"></p>
             </div>
-            <div class="first2"></div>
+            <!-- this is the center -->
+            <div class="first2">
+                <p id="60"></p>
+            </div>
+
             <div class="first3">
                 <p id="20"></p>
                 <p id="21"></p>
@@ -142,7 +147,10 @@
         </div>
         </div>
     </div>
-    <button onclick="Spin()">Spin</button>
-    <div id="die" class="die"> </div>
+    <button id="button1" style="cursor: pointer;" onclick="Spin()" >player1</button>
+    <button id="button2" style="cursor: pointer;" onclick="Spin2()">player2</button>
+    <div id="die" class="die">spin value: </div>
+    <div id="die2" class="die">spin value: </div>
+</div>
 </body>
 </html>
