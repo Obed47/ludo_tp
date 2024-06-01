@@ -6,24 +6,24 @@
     <title>Ludo Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="second.js"></script>
+    <link rel="icon" href="/5.png" type="image/x-icon">
 </head>
 <body>
     <div class="all">
     <div class="main">
         <div class="first">
-            <div class="first1">
+            <div id="square1" class="first1">
                 <div style="background-color: blue;" class="circle">
-                    <div id="token" class="token"></div>
-                    <div id="token1" class="token"></div>
-                    <div id="token2" class="token"></div>
-                    <div id="token3" class="token"></div>
-                
+                    <div id="r1" class="token"></div>
+                    <div id="r2" class="token"></div>
+                    <div id="r3" class="token"></div>
+                    <div id="r4" class="token"></div>
                 </div>
             </div>
             <div class="first2">
                 <!-- boxes here -->
-                <p id="12"></p>
+                <p  id="12"></p>
                 <p id="13"></p>
                 <p id="14"></p>
                 <p id="11"></p>
@@ -64,22 +64,26 @@
                <p id="5"></p>
                <p id="6"></p>
                <p id="53"></p>
-               <p id="55"  style="background-color: blue;"></p>
-               <p id="56"  style="background-color: blue;"></p>
-               <p id="57"  style="background-color: blue;"></p>
-               <p id="58"  style="background-color: blue;"></p>
-               <p id="59"  style="background-color: blue;"></p>
+               <p id="200"  style="background-color: blue;"></p>
+               <p id="201"  style="background-color: blue;"></p>
+               <p id="202"  style="background-color: blue;"></p>
+               <p id="203"  style="background-color: blue;"></p>
+               <p id="204"  style="background-color: blue;"></p>
                <p  id="52"></p>
                <p  id="51"></p>
                <p id="50"></p>
-               <!-- kittle -->
                <p id="49"></p>
                <p id="48"></p>
                <p id="47"></p>
             </div>
             <!-- this is the center -->
-            <div class="first2">
-                <p id="60"></p>
+            <div style="display: flex; flex-wrap: wrap; margin: auto; border: 2px solid red;" class="first2">
+                <p id="500"></p>
+                <p id="501"></p>
+                <p id="502"></p>
+                <p id="503"></p>
+                <p id="504"></p>
+                <p id="506"></p>
             </div>
 
             <div class="first3">
@@ -134,7 +138,7 @@
                <p id="38"></p>
                <p id="41"></p>
                <p id="40"></p>
-               <p  id="39"></p>
+               <p id="39"></p>
             </div>
             <div class="first3">
                  <div class="circle">
@@ -143,14 +147,18 @@
                     <div class="token"></div>
                     <div class="token"></div>
                  </div>
-            
         </div>
         </div>
     </div>
-    <button id="button1" style="cursor: pointer;" onclick="Spin()" >player1</button>
-    <button id="button2" style="cursor: pointer;" onclick="Spin2()">player2</button>
-    <div id="die" class="die">spin value: </div>
-    <div id="die2" class="die">spin value: </div>
+    <!-- <button id="button1" style="cursor: pointer;" onclick="moveBlue()" >player1</button> -->
+    <!-- <button id="button2" style="cursor: pointer;" onclick="moveRed()">player2</button> -->
+    <button onclick="Main()">play</button>
+    <button onclick="moveBlue()">Player1</button>
+    <button onclick="moveRed()" >player2</button>
+    <p id="display">Die</p>
+   <p id="p1">p1 position</p>
+   <p id="p2">p2 position</p>
+    <!-- <div id="die2" class="val">spin value: </div> -->
 </div>
 </body>
 </html>
